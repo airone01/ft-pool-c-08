@@ -11,8 +11,8 @@
 /* ************************************************************************** */
 
 #include "ft_stock_str.h"
-#include <unistd.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 int	ft_strlen(char *str)
 {
@@ -53,25 +53,25 @@ void	ft_putnbr(int nb)
 	ft_putchar(nb + '0');
 }
 
-void  ft_show_tab(struct s_stock_str *par)
+void	ft_show_tab(struct s_stock_str *par)
 {
-  int i;
-  char **strs;
+	int		i;
+	char	**strs;
 
-  strs = malloc(20 * sizeof(char *));
-  if (strs == NULL)
-    return ;
-  i = 0;
-  while (par[i].str != NULL)
-  {
-    ft_putstr(par[i].str);
-    ft_putstr("\n");
-    ft_putnbr(par[i].size);
-    ft_putstr("\n");
-    ft_putstr(par[i].copy);
-    ft_putstr("\n");
-    i++;
-  }
+	strs = malloc(20 * sizeof(char *));
+	if (strs == NULL)
+		return ;
+	i = 0;
+	while (par[i].str != NULL)
+	{
+		ft_putstr(par[i].str);
+		ft_putstr("\n");
+		ft_putnbr(par[i].size);
+		ft_putstr("\n");
+		ft_putstr(par[i].copy);
+		ft_putstr("\n");
+		i++;
+	}
 }
 
 // #include <stdio.h>
