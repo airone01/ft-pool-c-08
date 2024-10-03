@@ -13,12 +13,12 @@
 #include "ft_stock_str.h"
 #include <stdlib.h>
 
-// int	ft_strlen(char *str)
-// {
-// 	if (*str == '\0')
-// 		return (0);
-// 	return (ft_strlen(str + sizeof(char)) + 1);
-// }
+int	ft_strlen(char *str)
+{
+	if (*str == '\0')
+		return (0);
+	return (ft_strlen(str + sizeof(char)) + 1);
+}
 
 /*
  * Duplicates a string.
