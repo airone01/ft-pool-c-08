@@ -13,12 +13,12 @@
 #include "ft_stock_str.h"
 #include <stdlib.h>
 
-int	ft_strlen(char *str)
-{
-	if (*str == '\0')
-		return (0);
-	return (ft_strlen(str + sizeof(char)) + 1);
-}
+// int	ft_strlen(char *str)
+// {
+// 	if (*str == '\0')
+// 		return (0);
+// 	return (ft_strlen(str + sizeof(char)) + 1);
+// }
 
 /*
  * Duplicates a string.
@@ -61,7 +61,7 @@ struct s_stock_str	*ft_strs_to_tab(int ac, char **av)
 			return (NULL);
 		i++;
 	}
-  tab[i] = 0;
+  tab[i].str = 0;
 	return (tab);
 }
 
